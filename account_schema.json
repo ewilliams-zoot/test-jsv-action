@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "properties": {
+        "accounts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    }
+}

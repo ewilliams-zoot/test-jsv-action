@@ -1,0 +1,11 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  validate-json-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ewilliams-zoot/jsv-action@v0.0.2
+        with:
+          key-and-file: 'users:users.json accounts:accounts.json'
+          key-and-schema: 'users:user_schema.json accounts:account_schema.json'
